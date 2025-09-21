@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mental Health</title>
+
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Animate CSS -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"/>
+
+  <style>
+    .card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body>
+  
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="./img/logo.png" alt="logo" height="40" class="me-2">
+        <span>Mental Health</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto fw-semibold">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Treatment</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Our Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Resources & Events</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar -->
+
+  <!-- Hero Section -->
+  <section class="container-fluid d-flex align-items-center" style="min-height:100vh; padding-top:70px;" id="home">
+    <div class="row align-items-center w-100">
+      
+      <!-- Left Column -->
+      <div class="col-md-6 text-center animate__animated animate__fadeInLeft">
+  <h1 class="fw-bold display-5">You're Not Alone. <br>Caring for Your Mental Wellbeing</h1>
+  <div class="d-flex justify-content-center mt-4 gap-3">
+    <button class="btn btn-primary">Who We Are <i class="fa-regular fa-address-card ms-2"></i></button>
+    <button class="btn btn-outline-primary">Book Now <i class="fa-solid fa-book ms-2"></i></button>
+  </div>
+</div>
+
+      
+      <!-- Right Column -->
+      <div class="col-md-6 text-center mt-4 mt-md-0">
+        <img src="./img/main.png" alt="Mental health illustration" class="img-fluid animate__animated animate__fadeInRight">
+      </div>
+    </div>
+  </section>
+  <!-- Hero Section -->
+
+  <!-- Cards Section -->
+  <section class="container my-5 animate__animated animate__bounceIn" id="services">
+
+    <div class="col text-center my-5">
+        <h2>Our Activities</h2>
+    </div>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
+      <div class="col">
+        <a href="#" class="text-decoration-none text-dark">
+          <div class="card h-100 shadow-sm">
+            <img src="./img/about.png" class="card-img-top" alt="Counseling">
+            <div class="card-body">
+              <h5 class="card-title">Who We Are?</h5>
+              <p class="card-text">Confidential and professional counseling tailored to your needs.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="text-decoration-none text-dark">
+          <div class="card h-100 shadow-sm">
+            <img src="./img/treatment.png" class="card-img-top" alt="Therapy">
+            <div class="card-body">
+              <h5 class="card-title">Treatment</h5>
+              <p class="card-text">Expert-led therapy sessions for individuals and groups.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="text-decoration-none text-dark">
+          <div class="card h-100 shadow-sm">
+            <img src="./img/services.png" class="card-img-top" alt="Workshops">
+            <div class="card-body">
+              <h5 class="card-title">Our Services</h5>
+              <p class="card-text">Engaging workshops to build mental resilience and awareness.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="text-decoration-none text-dark">
+          <div class="card h-100 shadow-sm">
+            <img src="./img/events.webp" class="card-img-top" alt="Support Groups">
+            <div class="card-body">
+              <h5 class="card-title">Events</h5>
+              <p class="card-text">Join groups that foster healing, connection, and encouragement.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- Cards Section -->
+
+  <!-- Contact Section -->
+  <section class="container  mt-5" id="contact">
+    <div class="row justify-content-center mt-5">
+      <div class="col-md-8">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h3 class="card-title mb-4 text-center">Contact Us</h3>
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Your Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+              </div>
+              <div class="mb-3">
+                <label for="subject" class="form-label">Subject</label>
+                <input type="text" class="form-control" id="subject" placeholder="Enter subject">
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="5" placeholder="Write your message here..." required></textarea>
+              </div>
+              <div class="d-grid">
+                <button type="submit" class="btn btn-primary">Send Message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact Section -->
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
